@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Jenil Bharadva | Legend</title>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1><span class="typewriter" id="typewriter"></span></h1>
+    <p class="tagline">Hacker | Proggmer | Painter | Clever Boy</p>
+    <div class="buttons">
+      <a href="https://github.com/jenil" target="_blank">GitHub</a>
+      <a href="https://instagram.com/jenil_bharadva.2311" target="_blank">Instagram</a>
+      <a href="jenil105105@gmail.com">Email Me</a>
+    </div>
+  </div>
+
+  <script>
+    const text = "Jenil Ashvinkumar Bharadva";
+    let i = 0;
+    const speed = 100;
+
+    function typeWriter() {
+      if (i < text.length) {
+        document.getElementById("typewriter").innerHTML += text.charAt(i);
+        i++;
+        setTimeout(typeWriter, speed);
+      }
+    }
+    typeWriter();
+  </script>
+</body>
+</html>
